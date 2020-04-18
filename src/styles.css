@@ -5,21 +5,20 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 14px, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100vw;
+  padding: 20px;
 }
 
 div {
   width: 100%;
-  margin: 20px;
+  justify-content: start;
 }
 
 div li {
   display: flex;
   align-items: center;
-}
-
-div li + li {
-  margin-top: 15px;
 }
 
 button {
@@ -31,9 +30,51 @@ button {
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  border-radius: 5px;
 }
 
 div li button {
   margin: 0 15px;
   background: #ca4949;
+}
+
+/* =========== Style =========== */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: auto;
+}
+
+.repo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+  margin: 10px;
+}
+
+.repo--title {
+  padding: 10px;
+}
+
+.repo--url a {
+  text-decoration: none;
+  color: rgb(124, 77, 77);
+}
+.repo--url span {
+  font-weight: bold;
+}
+
+.repo--techs {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.repo--tech {
+  padding: 2px 10px;
+  border-radius: 5px;
+  background: #59c181;
+  color: #fff;
+  margin: 2px;
 }
